@@ -3,24 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript-Basic</title>
 </head>
 <body>
     
     <!-- GetElementById Method -->
+    <h3>GetElementById method</h3>
     <h1 id="title"></h1>
-    
+    <h2>-----------------------------------</h2>
+
     <!-- Changing source and use function on click-->
+    <h3>Changing source and use function on click</h3>
     <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" id="light">
     <button id="switch-btn" onclick="switch_btn()">Turn on</button>
+    <h2>-----------------------------------</h2>
 
-    <br><br><br>
-
+    
     <!-- Changing css style  -->
+    <h3>Changing css style</h3>
     <button id="change-style" onclick="change_style()">Click me!</button>
+    <h2>-----------------------------------</h2>
     
+    <!-- Using Javascript with attributes -->
+        <!-- You can use Javascript with this ways -->
+            <!-- 
+            With a full URL (a full web address)
+            With a file path (like /js/)
+            Without any path 
+            -->
+    <h3>Using Javascript with attributes</h3>
+    <button id="js-with-attributes" onclick="using_js_with_attributes()">Click me!</button>
+    <h2>-----------------------------------</h2>
     
-    
+    <!-- Javascript Display possibilities -->
+    <h3>Javascript Display possibilities</h3>
+    <!-- The method document write data as HTML element but be carefull this method deletes all existing html
+    and after writes.This method should only be used for testing-->
+    <button onclick="document.write('You\'re use the document write method')">Document Write</button>        
+    <button onclick="window.alert('You\'re use the window alert method')">Window Alert</button>
+    <!-- You can skip the keyword window -->
+    <button onclick="alert('You\'re use the alert method')">Alert</button>  
+    <!-- You can see Console Logs output in console       -->
+    <button onclick="console.log('Hello world')">Console Log</button>
+    <!-- Method print outputs whole screen and you can download the page like pdf ,png and etc formats-->
+    <button onclick="window.print()">Print</button>        
+    <h2>-----------------------------------</h2>
+
+
+
     <script src="main.js"></script>
+    <script>
+        // In this example we just use javacript with attributes
+        function using_js_with_attributes(){
+            document.getElementById("js-with-attributes").style.backgroundColor="violet";
+        }
+    </script>
 </body>
 </html>
