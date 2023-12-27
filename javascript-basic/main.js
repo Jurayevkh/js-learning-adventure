@@ -85,5 +85,17 @@
         console.log(a++); //Increment operator
         console.log(b--); //Decrement operator
 
-        
+    //Functions
+    //In Js you can declare function with keyword function and after function name and 
+    // in parentheses you write arguments name in Js , you don't have to mention type of parameter
+    function func_name(parameter1,parameter2){
+        //code to be executed
+        return parameter1+parameter2; // return parameter
+     }
+    //With functions you can reuse code
+    //You can write code that can be used many times.
+    //You can use the same code with different arguments, to produce different results.    
     
+    
+    //Object
+    //
