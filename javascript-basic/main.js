@@ -98,4 +98,19 @@
     
     
     //Object
-    //
+    //Objects are variablase too but objects can contain many values.
+    const person = {firstName:"Johny", lastName:"Dep", Age:46};
+    //This object written as name,value pair
+
+    //you can also write objects with multiple lines
+    const user={
+        userName:"johnydeep",
+        password:"johnydeep1234"
+    };
+    
+    //Name Value Pair are Called property in JS
+
+    //You can access to object properties with two ways
+        user.password
+        //or
+        person["Age"]
