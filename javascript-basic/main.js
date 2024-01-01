@@ -171,3 +171,39 @@
     if(30==="30"){// but here === checks value and type and here operator returns false
         console.log("the values are not equal");
     }
+
+
+    //extracting string parts
+    //slice(start position, end position)
+        str.slice(0,5); // this method extract part of string and extracted new string
+        str.slice(2); // here omit the second parametr and method slice out rest of string
+    //substring()
+        str1.substring(1,3); //substring is similar to slice but difference is substring treated start and end 
+                                //values 0 when values less than 0
+    //substr()
+        str2.substr(0,3); //substr is similar to slice but difference is substr's second parameter
+                                    //takes length of the extracted part
+        str2.substr(-7); // when method get negativ counts from end
+
+    //replacing methods
+        str3.replace("Lorem","lorem"); //the method replace() , replaces specified value and returns new string
+                                       //replace() replaces only the first match
+        str3.replace(/Lorem/g, "lorem"); // to replace all matches , you can use regEx
+                                        //or you can use replaceAll()
+    //toUpperCase()
+        str3.toUpperCase(); //method converted string to upper case
+    //toLowerCase()
+        str3.toLowerCase(); //method converted string to lower case
+    //concat
+        str3.concat(" ",str2); //this method joins two or more strings
+    //trim
+        str2.trim(); //method remove whitespaces from both sides
+    //trimStart
+        str2.trimStart(); //method remove whitespace from start
+    //trimEnd
+        str2.trimEnd(); //method remove whitespace from end
+    
+    
+    
+    
+    
