@@ -114,3 +114,60 @@
         user.password
         //or
         person["Age"]
+
+    //functions in objects
+        //objects can also have methods
+    const John={
+        firstName:"John",
+        lastName:"Doe",
+        Age:46,
+        getFullName:function(){ //method stored as a property
+            return this.firstName + " " + this.lastName;//here keyword "this" means value of object
+        }
+    }
+
+    John.getFullName(); //here called method of object
+
+
+    //Don't declare strings,numbers,boolean as object
+    x=new String();
+    y=new Number();
+    z=new Boolean();
+    //It's complicate your code and slow down execution speed
+
+    //String methods
+    let str="Some text";//you can use double or single quotes for string 
+    let len=str.length; //length of string
+
+    let str1="Some text \"text\" here"; //here backslash converts special characters to string
+    let str2="Here you can see backslash \\";
+    
+    // \b=backspace
+    // \f=form feed
+    // \n=new line
+    // \r=carriage return
+    // \t=horizontal tabulator
+    // \v=vertical tabulator
+
+    //Breaking long code lines
+        //For code be more readable , programmers uses breaking long code lines
+        //In JS your code doesn't fit on one line the best place for break it's after an operator
+        document.getElementById("demo").innerHTML= "Hey \
+        yo wassup";
+
+        document.getElementById("demo").innerHTML= "Breaking"+
+        " long code lines";
+
+    //Strings as Object
+    //You can also declare strings as object with "new" keyword
+    let str3=new String("Lorem ipsum");
+
+
+    //Difference between == and ===
+    if(30=="30"){ // in here == checks only values but not types and here operator returns true
+        console.log("the values are equal");
+    }
+    
+    if(30==="30"){// but here === checks value and type and here operator returns false
+        console.log("the values are not equal");
+    }
