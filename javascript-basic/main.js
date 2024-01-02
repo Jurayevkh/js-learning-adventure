@@ -266,6 +266,24 @@
     //parseFloat()
         parseFloat("5.23");
 
+    //Number Properties
+    //EPSILON
+     console.log(Number.EPSILON);//difference between the smallest floating point number greater than 1 and 1.
+    //MAX_VALUE
+     console.log(Number.MAX_VALUE);//the largest number possible in JS
+    //MIN_VALUE
+     console.log(Number.MIN_VALUE);//the smallest number possible in JS
+    //MAX_SAFE_INTEGER
+     console.log(Number.MAX_SAFE_INTEGER);//the maximum safe integer
+    //MIN_SAFE_INTEGER
+     console.log(Number.MIN_SAFE_INTEGER);//the minimum safe integer
+    //POSITIVE_INFINITY
+     console.log(Number.POSITIVE_INFINITY);//Infinity
+    //NEGATICE_INFINITY
+     console.log(Number.NEGATIVE_INFINITY);//Negative Infinity
+    
+
+
      //BigInt
      //Creating BigInt:
       let bigint=12392348098n;
