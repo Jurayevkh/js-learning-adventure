@@ -224,7 +224,24 @@
         let word1="JS";
         let text='Welcome to ${word1}!';
     
+    //NaN
+    //NaN is stand for Not a Number it means JS to do something arithmetic with a non number string with number
+    //For example:
+    console.log(100/"string");
+    //But in this example returns value not a NaN:
+    console.log(100/"10"); //cause in JS you can calculate number with string if your string is number
 
+    //toString(number system)
+    let myNumber="90";
+    console.log(myNumber.toString(10));
+
+    //Numbers as Object
+    let int=15;
+    let int1=new Number(15);
+
+    //compare this two variable
+    console.log(int==int1);//objects can't compare in JS and always returns false
+    
                              
     
     
