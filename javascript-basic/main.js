@@ -194,16 +194,38 @@
         str3.toUpperCase(); //method converted string to upper case
     //toLowerCase()
         str3.toLowerCase(); //method converted string to lower case
-    //concat
+    //concat()
         str3.concat(" ",str2); //this method joins two or more strings
-    //trim
+    //trim()
         str2.trim(); //method remove whitespaces from both sides
-    //trimStart
+    //trimStart()
         str2.trimStart(); //method remove whitespace from start
-    //trimEnd
+    //trimEnd()
         str2.trimEnd(); //method remove whitespace from end
+    //indexOf()
+        str2.indexOf("can"); //indexOf returns index of first occurence of string in a string
+    //lastIndexOf()
+        str3.indexOf("ipsum"); //method returns index of last occurence of string in a string
+    //search()
+        str2.search("see"); // this method similar to indexOf but difference is:
+                                //indexOf can't take powerful search values (RegEx)
+                                //search can't take a second start position argument.
+    //match
+        str2.match("an"); //returns an array containing the results of matching a string against a string
+    //matchAll
+        str1.matchAll("a"); 
+    //startsWith
+        str2.startsWith("Here"); //the method returns boolean with comparing parameter that given and text's first
+                                 //string
+    //endsWith
+        str2.endsWith("\\"); //the method returns boolean with comparing parameter that given and text's last string
     
+    //String Interpolation
+        let word1="JS";
+        let text='Welcome to ${word1}!';
     
+
+                             
     
     
     
