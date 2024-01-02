@@ -241,8 +241,35 @@
 
     //compare this two variable
     console.log(int==int1);//objects can't compare in JS and always returns false
+
+
+    //Number Methods
+     let number=123;
+     let float=5.6054;
+    //valueOf()
+     number.valueOf();//this method returns number as number
+    //toPrecision()
+     float.toPrecision(4);
+    //toFixed()
+     console.log(float.toFixed(2)); //method rounds a number to a given number of digits.
+    //toExponential()
+     float.toExponential(2) //method returns a string, with the number rounded and written using exponential notation.
     
-                             
-    
-    
+    //Converting variable to number
+    //Number()
+        console.log(Number("14"));//method used in JS to convert variable to number
+                                  //if number can't converted returns NaN
+
+        Number(new Date("2020-04-01"));//you can also use Number to convert date to number
+    //parseInt()
+       parseInt("132");
+    //parseFloat()
+        parseFloat("5.23");
+
+     //BigInt
+     //Creating BigInt:
+      let bigint=12392348098n;
+     //or
+      let bigint2=new BigInt(126663848);
+
     
